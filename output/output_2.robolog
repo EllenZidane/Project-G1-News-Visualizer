@@ -1,0 +1,650 @@
+V 0.0.4
+T 2024-08-04T12:09:07.052+00:00
+ID 2|594cdbbd-525a-11ef-9e34-ac5afcb56d95
+I "sys.platform=win32"
+I "python=3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:34:57) [MSC v.1936 64 bit (AMD64)]"
+M a:"tasks.py - main"
+RR a|0.014
+M P:"main"
+M Q:"tasks"
+M R:"c:\\github\\Project_News\\tasks.py"
+M S:null
+P O:P|Q|R|S|46
+RT O|16.04
+M l:"METHOD"
+RE O|l|16.048
+M dg:"for item in news_items"
+M e:""
+P df:dg|Q|R|e|165
+M ap:"FOR"
+RE df|ap|48.903
+M di:"Step: for item in news_items"
+P dh:di|Q|R|e|165
+M as:"FOR_STEP"
+RE dh|as|88.656
+M dx:"for image_download in images"
+P dw:dx|Q|R|e|175
+RE dw|ap|88.822
+M dz:"Step: for image_download in images"
+P dy:dz|Q|R|e|175
+RE dy|as|88.822
+P ek:P|Q|R|e|178
+M dA:"image_download"
+M w:"str"
+M hD:"'mos2337-1-.jpg'"
+AS ek|dA|w|hD|89.029
+M em:"else (to if image_filename)"
+P el:em|Q|R|e|179
+M en:"ELSE_SCOPE"
+SE el|en|89.039
+M dv:"image_filename"
+M bO:"''"
+EA dv|w|bO
+P eo:P|Q|R|e|185
+AS eo|dv|w|hD|89.039
+M D:"PASS"
+EE en|D|89.039
+EE as|D|89.039
+EE ap|D|89.04
+M eq:"WebElement.find_element"
+M b4:"selenium.webdriver.remote.webelement"
+M b5:"c:\\ProgramData\\robocorp\\ht\\8f89ce1_b1f3c24_9ba66f27\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py"
+P ep:eq|b4|b5|e|396
+SE ep|l|89.04
+M bX:"by"
+M do:"'tag name'"
+EA bX|w|do
+M bZ:"value"
+M er:"'a'"
+EA bZ|w|er
+P es:eq|b4|b5|e|416
+M bQ:"WebElement"
+M hz:"<selenium.webdriver.remote.webelement.WebElement (session=\"a9e4980b7ca981f93ad7159e6e93c4f1\", element=\"f.1CF29003985D7980217195222ED25A08.d.7BA86A033656EB999CCB7571BCFCC956.e.552\")>"
+R es|bQ|hz|89.049
+EE l|D|89.049
+P et:P|Q|R|e|193
+M eu:"link_element"
+AS et|eu|bQ|hz|89.05
+M dD:"WebElement.get_attribute"
+P dC:dD|b4|b5|e|150
+SE dC|l|89.05
+M dE:"name"
+M ev:"'href'"
+EA dE|w|ev
+P dG:dD|b4|b5|e|180
+M hG:"'https://g1.globo.com/busca/click?q=money&p=8&r=1722752977651&u=https%3A%2F%2Fg1.globo.com%2Fespecial-publicitario%2Farcelor-mittal%2Fnoticia%2F2024%2F07%2F31%2Fatleta-de-bodyboarding-patrocinada-pela-arcelormittal-conquista-bicampeonato-mundial-no-chile.ghtml&syn=False&key=f0bb7f76369e4d897269f72fdab3b3e6'"
+R dG|w|hG|89.059
+EE l|D|89.059
+P ex:P|Q|R|e|194
+M ey:"news_url"
+AS ex|ey|w|hG|89.059
+M cJ:"WebDriver.execute_script"
+M bm:"selenium.webdriver.remote.webdriver"
+M bn:"c:\\ProgramData\\robocorp\\ht\\8f89ce1_b1f3c24_9ba66f27\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py"
+P cI:cJ|bm|bn|e|386
+SE cI|l|89.059
+M cK:"script"
+M ez:"\"window.open(arguments[0], '_blank');\""
+EA cK|w|ez
+M cM:"args"
+M aL:"tuple"
+M hH:"('https://g1.globo.com/busca/click?q=money&p=8&r=1722752977651&u=https%3A%2F%2Fg1.globo.com%2Fespecial-publicitario%2Farcelor-mittal%2Fnoticia%2F2024%2F07%2F31%2Fatleta-de-bodyboarding-patrocinada-pela-arcelormittal-conquista-bicampeonato-mundial-no-chile.ghtml&syn=False&key=f0bb7f76369e4d897269f72fdab3b3e6',)"
+EA cM|aL|hH
+P cO:cJ|bm|bn|e|407
+M n:"NoneType"
+M o:"None"
+R cO|n|o|89.171
+EE l|D|89.171
+M eC:"WebDriver.switch_to"
+P eB:eC|bm|bn|e|522
+SE eB|l|89.171
+P eD:eC|bm|bn|e|539
+M eE:"SwitchTo"
+M eF:"<selenium.webdriver.remote.switch_to.SwitchTo object at 0x0000024FA884B220>"
+R eD|eE|eF|89.171
+EE l|D|89.171
+M eH:"WebDriver.window_handles"
+P eG:eH|bm|bn|e|486
+SE eG|l|89.171
+P eI:eH|bm|bn|e|494
+M al:"list"
+M hI:"['1CF29003985D7980217195222ED25A08', '36746EAC1B343780474287859627AD0C']"
+R eI|al|hI|89.192
+EE l|D|89.192
+M eL:"SwitchTo.window"
+M eM:"selenium.webdriver.remote.switch_to"
+M eN:"c:\\ProgramData\\robocorp\\ht\\8f89ce1_b1f3c24_9ba66f27\\lib\\site-packages\\selenium\\webdriver\\remote\\switch_to.py"
+P eK:eL|eM|eN|e|122
+SE eK|l|89.192
+M eO:"window_name"
+M hJ:"'36746EAC1B343780474287859627AD0C'"
+EA eO|w|hJ
+EE l|D|89.2
+M bW:"WebDriver.find_element"
+P bV:bW|bm|bn|e|715
+SE bV|l|89.2
+M co:"'xpath'"
+EA bX|w|co
+M eQ:"'//time[contains(@itemprop, \"datePublished\")]'"
+EA bZ|w|eQ
+P b1:bW|bm|bn|e|741
+M hK:"<selenium.webdriver.remote.webelement.WebElement (session=\"a9e4980b7ca981f93ad7159e6e93c4f1\", element=\"f.36746EAC1B343780474287859627AD0C.d.3EE45DB8C0941EE6C3B9510C2C33CA67.e.598\")>"
+R b1|bQ|hK|92.609
+EE l|D|92.609
+M eT:"WebElement.text"
+P eS:eT|b4|b5|e|87
+SE eS|l|92.61
+P eU:eT|b4|b5|e|89
+M hL:"'31/07/2024 09h00'"
+R eU|w|hL|92.72
+EE l|D|92.72
+P eW:P|Q|R|e|201
+M eX:"date_published"
+AS eW|eX|w|hL|92.72
+M eZ:"parse_date"
+P eY:eZ|Q|R|e|282
+SE eY|l|92.721
+M e0:"date"
+EA e0|w|hL
+P e1:eZ|Q|R|e|285
+M hM:"'31/07/2024'"
+AS e1|e0|w|hM|92.721
+P e3:eZ|Q|R|e|291
+R e3|w|hM|92.721
+EE l|D|92.721
+P e4:P|Q|R|e|204
+AS e4|e0|w|hM|92.721
+SE bV|l|92.721
+EA bX|w|co
+M e5:"'//h1[contains(@class, \"content-head__title\")]'"
+EA bZ|w|e5
+M hN:"<selenium.webdriver.remote.webelement.WebElement (session=\"a9e4980b7ca981f93ad7159e6e93c4f1\", element=\"f.36746EAC1B343780474287859627AD0C.d.3EE45DB8C0941EE6C3B9510C2C33CA67.e.557\")>"
+R b1|bQ|hN|92.78
+EE l|D|92.78
+P e7:P|Q|R|e|207
+M e8:"title_element"
+AS e7|e8|bQ|hN|92.78
+SE eS|l|92.78
+M hO:"'Atleta de bodyboarding patrocinada pela ArcelorMittal conquista bicampeonato mundial no Chile'"
+R eU|w|hO|92.872
+EE l|D|92.872
+P fa:P|Q|R|e|210
+M fb:"title"
+AS fa|fb|w|hO|92.872
+M fd:"count_occurrences"
+P fc:fd|Q|R|e|327
+SE fc|l|92.872
+M aD:"text"
+EA aD|w|hO
+M aw:"keyword"
+M ax:"'money'"
+EA aw|w|ax
+P fe:fd|Q|R|e|328
+M q:"int"
+M r:"0"
+R fe|q|r|92.872
+EE l|D|92.872
+P fg:P|Q|R|e|211
+M fh:"title_count"
+AS fg|fh|q|r|92.872
+M fj:"contains_money"
+P fi:fj|Q|R|e|332
+SE fi|l|92.873
+EA aD|w|hO
+P fk:fj|Q|R|e|333
+M fl:"money_pattern"
+M fm:"Pattern"
+M fn:"re.compile('\\\\$\\\\s?\\\\d{1,3}(?:,\\\\d{3})*(?:\\\\.\\\\d{1,2})?|\\\\d+\\\\s?(?:dollars|USD)|R\\\\$\\\\s?\\\\d{1,3}(?:\\\\.\\\\d{3})*(?:,\\\\d{1,2})?|\\\\d+\\\\s?(?:reais|BRL)', re.IGNORECASE)"
+AS fk|fl|fm|fn|92.873
+P fo:fj|Q|R|e|337
+M t:"bool"
+M u:"False"
+R fo|t|u|92.873
+EE l|D|92.873
+P fp:P|Q|R|e|212
+M fq:"title_contains_money"
+AS fp|fq|t|u|92.873
+SE bV|l|92.873
+EA bX|w|co
+M fr:"'//h2[contains(@class, \"content-head__subtitle\")]'"
+EA bZ|w|fr
+M hP:"<selenium.webdriver.remote.webelement.WebElement (session=\"a9e4980b7ca981f93ad7159e6e93c4f1\", element=\"f.36746EAC1B343780474287859627AD0C.d.3EE45DB8C0941EE6C3B9510C2C33CA67.e.599\")>"
+R b1|bQ|hP|92.925
+EE l|D|92.925
+P ft:P|Q|R|e|216
+M fu:"description_element"
+AS ft|fu|bQ|hP|92.925
+SE eS|l|92.925
+M hQ:"'A parceria com Luna Hardman reflete o compromisso da empresa com a sustentabilidade, a preserva\u00e7\u00e3o dos oceanos e o incentivo ao empoderamento feminino'"
+R eU|w|hQ|92.983
+EE l|D|92.984
+P fw:P|Q|R|e|219
+M fx:"description"
+AS fw|fx|w|hQ|92.984
+SE fc|l|92.984
+EA aD|w|hQ
+EA aw|w|ax
+R fe|q|r|92.986
+EE l|D|92.986
+P fy:P|Q|R|e|223
+M fz:"description_count"
+AS fy|fz|q|r|92.986
+SE fi|l|92.986
+EA aD|w|hQ
+AS fk|fl|fm|fn|92.986
+R fo|t|u|92.986
+EE l|D|92.986
+P fA:P|Q|R|e|224
+M fB:"description_contains_money"
+AS fA|fB|t|u|92.986
+M fD:"WebDriver.close"
+P fC:fD|bm|bn|e|450
+SE fC|l|92.987
+EE l|D|93.103
+SE eB|l|93.104
+R eD|eE|eF|93.104
+EE l|D|93.104
+SE eG|l|93.104
+M fE:"['1CF29003985D7980217195222ED25A08']"
+R eI|al|fE|93.113
+EE l|D|93.113
+SE eK|l|93.113
+M fF:"'1CF29003985D7980217195222ED25A08'"
+EA eO|w|fF
+EE l|D|93.122
+EE as|D|93.123
+SE dh|as|93.123
+M ak:"item"
+M hR:"<selenium.webdriver.remote.webelement.WebElement (session=\"a9e4980b7ca981f93ad7159e6e93c4f1\", element=\"f.1CF29003985D7980217195222ED25A08.d.7BA86A033656EB999CCB7571BCFCC956.e.134\")>"
+EA ak|bQ|hR
+M bt:"WebDriverWait.__init__"
+M bu:"selenium.webdriver.support.wait"
+M bv:"c:\\ProgramData\\robocorp\\ht\\8f89ce1_b1f3c24_9ba66f27\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py"
+P bs:bt|bu|bv|e|36
+SE bs|l|93.123
+M ad:"driver"
+EA ad|bQ|hR
+M aR:"timeout"
+M b6:"15"
+EA aR|q|b6
+M bx:"poll_frequency"
+M by:"float"
+M bz:"0.5"
+EA bx|by|bz
+M bA:"ignored_exceptions"
+EA bA|n|o
+EE l|D|93.123
+M b8:"presence_of_element_located"
+M bD:"selenium.webdriver.support.expected_conditions"
+M bE:"c:\\ProgramData\\robocorp\\ht\\8f89ce1_b1f3c24_9ba66f27\\lib\\site-packages\\selenium\\webdriver\\support\\expected_conditions.py"
+P b7:b8|bD|bE|e|71
+SE b7|l|93.123
+M b9:"locator"
+M dk:"('tag name', 'a')"
+EA b9|aL|dk
+P cb:b8|bD|bE|e|82
+M bI:"function"
+M hS:"<function presence_of_element_located.<locals>._predicate at 0x0000024FBB94AF80>"
+R cb|bI|hS|93.124
+EE l|D|93.124
+M bL:"WebDriverWait.until"
+P bK:bL|bu|bv|e|77
+SE bK|l|93.124
+M bM:"method"
+EA bM|bI|hS
+M bN:"message"
+EA bN|w|bO
+P bP:bL|bu|bv|e|94
+M hT:"<selenium.webdriver.remote.webelement.WebElement (session=\"a9e4980b7ca981f93ad7159e6e93c4f1\", element=\"f.1CF29003985D7980217195222ED25A08.d.7BA86A033656EB999CCB7571BCFCC956.e.600\")>"
+R bP|bQ|hT|93.159
+EE l|D|93.159
+M dn:"WebElement.find_elements"
+P dm:dn|b4|b5|e|418
+SE dm|l|93.159
+EA bX|w|do
+M dp:"'img'"
+EA bZ|w|dp
+P dq:dn|b4|b5|e|438
+M c7:"[]"
+R dq|al|c7|93.166
+EE l|D|93.166
+P ds:P|Q|R|e|173
+M dt:"images"
+AS ds|dt|al|c7|93.166
+P du:P|Q|R|e|174
+AS du|dv|w|bO|93.166
+SE dw|ap|93.166
+EE ap|D|93.166
+SE ep|l|93.166
+EA bX|w|do
+EA bZ|w|er
+R es|bQ|hT|93.172
+EE l|D|93.172
+AS et|eu|bQ|hT|93.172
+SE dC|l|93.172
+EA dE|w|ev
+M hU:"'https://g1.globo.com/busca/click?q=money&p=9&r=1722752977653&u=https%3A%2F%2Fg1.globo.com%2Feconomia%2Fnoticia%2F2024%2F07%2F31%2Franking-juros-reais.ghtml&syn=False&key=6e35d5890febf0bd1dba20ffba93bcde'"
+R dG|w|hU|93.182
+EE l|D|93.182
+AS ex|ey|w|hU|93.182
+SE cI|l|93.182
+EA cK|w|ez
+M hV:"('https://g1.globo.com/busca/click?q=money&p=9&r=1722752977653&u=https%3A%2F%2Fg1.globo.com%2Feconomia%2Fnoticia%2F2024%2F07%2F31%2Franking-juros-reais.ghtml&syn=False&key=6e35d5890febf0bd1dba20ffba93bcde',)"
+EA cM|aL|hV
+R cO|n|o|93.264
+EE l|D|93.264
+SE eB|l|93.264
+R eD|eE|eF|93.264
+EE l|D|93.264
+SE eG|l|93.264
+M hW:"['1CF29003985D7980217195222ED25A08', '8050145AE66F1AC4A52622D772EB23F1']"
+R eI|al|hW|93.274
+EE l|D|93.275
+SE eK|l|93.275
+M hX:"'8050145AE66F1AC4A52622D772EB23F1'"
+EA eO|w|hX
+EE l|D|93.287
+SE bV|l|93.287
+EA bX|w|co
+EA bZ|w|eQ
+M hY:"<selenium.webdriver.remote.webelement.WebElement (session=\"a9e4980b7ca981f93ad7159e6e93c4f1\", element=\"f.8050145AE66F1AC4A52622D772EB23F1.d.955B7E4DB943F3898B366E4E9823ECEF.e.700\")>"
+R b1|bQ|hY|97.071
+EE l|D|97.071
+SE eS|l|97.071
+M hZ:"'31/07/2024 18h36'"
+R eU|w|hZ|97.127
+EE l|D|97.127
+AS eW|eX|w|hZ|97.127
+SE eY|l|97.127
+EA e0|w|hZ
+AS e1|e0|w|hM|97.129
+R e3|w|hM|97.129
+EE l|D|97.129
+AS e4|e0|w|hM|97.129
+SE bV|l|97.129
+EA bX|w|co
+EA bZ|w|e5
+M h0:"<selenium.webdriver.remote.webelement.WebElement (session=\"a9e4980b7ca981f93ad7159e6e93c4f1\", element=\"f.8050145AE66F1AC4A52622D772EB23F1.d.955B7E4DB943F3898B366E4E9823ECEF.e.606\")>"
+R b1|bQ|h0|97.181
+EE l|D|97.182
+AS e7|e8|bQ|h0|97.183
+SE eS|l|97.184
+M h1:"'Com Selic inalterada, Brasil cai para 3\u00ba no ranking de maiores juros reais do mundo; veja lista'"
+R eU|w|h1|97.23
+EE l|D|97.231
+AS fa|fb|w|h1|97.232
+SE fc|l|97.232
+EA aD|w|h1
+EA aw|w|ax
+R fe|q|r|97.232
+EE l|D|97.232
+AS fg|fh|q|r|97.232
+SE fi|l|97.232
+EA aD|w|h1
+AS fk|fl|fm|fn|97.234
+R fo|t|u|97.234
+EE l|D|97.234
+AS fp|fq|t|u|97.234
+SE bV|l|97.234
+EA bX|w|co
+EA bZ|w|fr
+M h2:"<selenium.webdriver.remote.webelement.WebElement (session=\"a9e4980b7ca981f93ad7159e6e93c4f1\", element=\"f.8050145AE66F1AC4A52622D772EB23F1.d.955B7E4DB943F3898B366E4E9823ECEF.e.701\")>"
+R b1|bQ|h2|97.296
+EE l|D|97.296
+AS ft|fu|bQ|h2|97.296
+SE eS|l|97.298
+M h3:"'Pa\u00eds ocupava a segunda posi\u00e7\u00e3o at\u00e9 o m\u00eas passado, conforme levantamento do MoneYou. O topo est\u00e1 agora com a Turquia, enquanto a R\u00fassia vem em segundo lugar. A Argentina, que enfrenta uma infla\u00e7\u00e3o alt\u00edssima, segue na \u00faltima posi\u00e7\u00e3o.'"
+R eU|w|h3|97.346
+EE l|D|97.347
+AS fw|fx|w|h3|97.347
+SE fc|l|97.348
+EA aD|w|h3
+EA aw|w|ax
+M ff:"1"
+R fe|q|ff|97.353
+EE l|D|97.353
+AS fy|fz|q|ff|97.353
+SE fi|l|97.353
+EA aD|w|h3
+AS fk|fl|fm|fn|97.354
+R fo|t|u|97.354
+EE l|D|97.354
+AS fA|fB|t|u|97.354
+SE fC|l|97.354
+EE l|D|97.575
+SE eB|l|97.575
+R eD|eE|eF|97.575
+EE l|D|97.575
+SE eG|l|97.575
+R eI|al|fE|97.609
+EE l|D|97.609
+SE eK|l|97.61
+EA eO|w|fF
+EE l|D|97.624
+EE as|D|97.624
+EE ap|D|97.624
+P h4:P|Q|R|e|249
+M h5:"df"
+M h6:"DataFrame"
+M h7:"         date                                              title  ...  description_contains_money                                     image_filename\n0  01/08/2024  Conhe\u00e7a o Monkey Money App, uma solu\u00e7\u00e3o financ...  ...                       False                                           feed.png\n1  01/08/2024  Ju\u00edzes e advogados s\u00e3o alvo em opera\u00e7\u00e3o do MP ...  ...                       False         whatsapp-image-2024-08-01-at-09.43.51.jpeg\n2  02/08/2024  Ju\u00edzes do ES s\u00e3o investigados por usar fraude ...  ...                       False                                    thumb-fotos.jpg\n3  28/07/2024  Em turn\u00ea que celebra novo disco, Clarice Falc\u00e3...  ...                       False      clarice-falcao-dsc02593-marcelo-brandt-g1.jpg\n4  03/08/2024  Manuten\u00e7\u00e3o interrompe o abastecimento de \u00e1gua ...  ...                       False  reverse-osmosis-filter-tap-closeup-with-drippi...\n5  01/08/2024  Rol\u00ea no Alto Tiet\u00ea: semana tem teatro, festiva...  ...                       False            beatles-cordel-foto-matheus-fractal.jpg\n6  01/08/2024  Samuel Rosa lan\u00e7a turn\u00ea de \u00e1lbum solo na cidad...  ...                       False                                      samuel-66.jpg\n7  31/07/2024  Atleta de bodyboarding patrocinada pela Arcelo...  ...                       False                                     mos2337-1-.jpg\n8  31/07/2024  Com Selic inalterada, Brasil cai para 3\u00ba no ra...  ...                       False                                                   \n\n[9 rows x 8 columns]"
+AS h4|h5|h6|h7|97.841
+M h9:"ChromiumDriver.quit"
+M ia:"selenium.webdriver.chromium.webdriver"
+M ib:"c:\\ProgramData\\robocorp\\ht\\8f89ce1_b1f3c24_9ba66f27\\lib\\site-packages\\selenium\\webdriver\\chromium\\webdriver.py"
+P h8:h9|ia|ib|e|183
+SE h8|l|102.84
+EE l|D|105.598
+EE l|D|105.598
+M V:"task_name"
+C V|P|109.697
+M f:"regular"
+M ic:" status: "
+C f|ic|109.698
+M id:"PASS\n"
+C f|id|109.699
+M ie:"================================================================================\n"
+C f|ie|109.701
+ET D|e|109.702
+M ig:"Teardown tasks"
+M ih:"teardown"
+P if:ig|ih|e|e|0
+ST if|109.702
+M ii:"Process snapshot"
+SPS ii|109.704
+M ij:"System information:\nMemory: Total: 7.8 G, Available: 1.2 G, Used: 84.8 %\nCPUs: 8"
+P ik:e|e|e|e|0
+L I|ij|ik|0|109.883
+M il:"Subprocess: msedgedriver.exe (pid: 41480, status: running)\nCommand Line: C:\\Users\\kamil\\.cache\\selenium\\msedgedriver\\win64\\127.0.2651.86\\msedgedriver.exe --port=62251 --log-path=logs/logs.txt\nStarted: 09:09:20\nParent pid: 40820\nResident Set Size: 14.8 M\nVirtual Memory Size: 8.3 M"
+L I|il|ik|0|109.925
+M im:"OutputToPortThread|Thread ID: 2912 (daemon)"
+STD im|109.925
+M in:"c:\\ProgramData\\robocorp\\ht\\8f89ce1_b1f3c24_9ba66f27\\lib\\threading.py"
+M io:"_bootstrap"
+M ip:"self._bootstrap_inner()"
+TBE in|973|io|ip
+M iq:"self"
+M ir:"Thread"
+M is:"<Thread(OutputToPortThread, started daemon 2912)>"
+TBV iq|ir|is
+M it:"_bootstrap_inner"
+M iu:"self.run()"
+TBE in|1016|it|iu
+TBV iq|ir|is
+M iv:"run"
+M iw:"self._target(*self._args, **self._kwargs)"
+TBE in|953|iv|iw
+TBV iq|ir|is
+M ix:"c:\\ProgramData\\robocorp\\ht\\8f89ce1_b1f3c24_9ba66f27\\lib\\site-packages\\robocorp\\tasks\\_log_output_setup.py"
+M iy:"write_in_thread"
+M iz:"msg = q.get()"
+TBE ix|73|iy|iz
+M iA:"msg"
+M iB:"'ST if|109.689\\n'"
+TBV iA|w|iB
+M iC:"client_socket"
+M iD:"socket"
+M iE:"<socket.socket fd=700, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62243), raddr=('127.0.0.1', 62001)>"
+TBV iC|iD|iE
+M iF:"log"
+M iG:"module"
+M iH:"<module 'robocorp.log' from 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\8f89ce1_b1f3c24_9ba66f27\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\__init__.py'>"
+TBV iF|iG|iH
+M iI:"port_in_env"
+M iJ:"'62001'"
+TBV iI|w|iJ
+M iK:"q"
+M iL:"Queue"
+M iM:"<queue.Queue object at 0x0000024FA890EDD0>"
+TBV iK|iL|iM
+M iN:"c:\\ProgramData\\robocorp\\ht\\8f89ce1_b1f3c24_9ba66f27\\lib\\queue.py"
+M dS:"get"
+M iO:"self.not_empty.wait()"
+TBE iN|171|dS|iO
+TBV iq|iL|iM
+M iP:"block"
+M N:"True"
+TBV iP|t|N
+TBV aR|n|o
+M iQ:"wait"
+M iR:"waiter.acquire()"
+TBE in|320|iQ|iR
+M iS:"Condition"
+M iT:"<Condition(<unlocked _thread.lock object at 0x0000024FAAD7FD00>, 1)>"
+TBV iq|iS|iT
+TBV aR|n|o
+M iU:"waiter"
+M iV:"lock"
+M iW:"<locked _thread.lock object at 0x0000024FAC6E6CC0>"
+TBV iU|iV|iW
+M iX:"saved_state"
+TBV iX|n|o
+M iY:"gotit"
+TBV iY|t|u
+ETD 109.932
+M iZ:"MainThread|Thread ID: 24020 (non daemon)"
+STD iZ|109.932
+M i0:"c:\\ProgramData\\robocorp\\ht\\8f89ce1_b1f3c24_9ba66f27\\lib\\site-packages\\robocorp\\log\\__init__.py"
+M i1:"process_snapshot"
+M i2:"robo_logger.process_snapshot()"
+TBE i0|270|i1|i2
+M i3:"logger_instances"
+M B:"dict"
+M i4:"{<robocorp.log._robo_logger._RoboLogger object at 0x0000024FA7CBE110>: 1, <robocorp.log._robo_logger._RoboLogger object at 0x0000024FA890DA80>: 1}"
+TBV i3|B|i4
+M i5:"robo_logger"
+M i6:"_RoboLogger"
+M i7:"<robocorp.log._robo_logger._RoboLogger object at 0x0000024FA7CBE110>"
+TBV i5|i6|i7
+M i8:"c:\\ProgramData\\robocorp\\ht\\8f89ce1_b1f3c24_9ba66f27\\lib\\site-packages\\robocorp\\log\\_robo_logger.py"
+M i9:"new_func"
+M ja:"return func(self, *args, **kwargs)"
+TBE i8|20|i9|ja
+TBV iq|i6|i7
+M cN:"()"
+TBV cM|aL|cN
+M A:"kwargs"
+M C:"{}"
+TBV A|B|C
+M jb:"func"
+M jc:"<function _RoboLogger.process_snapshot at 0x0000024FAADC9CF0>"
+TBV jb|bI|jc
+M jd:"return self._robot_output_impl.process_snapshot(hide_vars)"
+TBE i8|416|i1|jd
+TBV iq|i6|i7
+M je:"hide_vars"
+TBV je|t|u
+M jf:"c:\\ProgramData\\robocorp\\ht\\8f89ce1_b1f3c24_9ba66f27\\lib\\site-packages\\robocorp\\log\\_robo_output_impl.py"
+M jg:"self._dump_threads(hide_vars)"
+TBE jf|748|i1|jg
+TBV je|t|u
+TBV iF|iG|iH
+M jh:"entry_id"
+M ji:"'ps_0'"
+TBV jh|w|ji
+M jj:"entry_type"
+M jk:"'process_snapshot'"
+TBV jj|w|jk
+M jl:"psutil"
+M jm:"<module 'psutil' from 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\8f89ce1_b1f3c24_9ba66f27\\\\lib\\\\site-packages\\\\psutil\\\\__init__.py'>"
+TBV jl|iG|jm
+M jn:"AccessDenied"
+M jo:"type"
+M jp:"<class 'psutil.AccessDenied'>"
+TBV jn|jo|jp
+M jq:"NoSuchProcess"
+M jr:"<class 'psutil.NoSuchProcess'>"
+TBV jq|jo|jr
+M js:"ZombieProcess"
+M jt:"<class 'psutil.ZombieProcess'>"
+TBV js|jo|jt
+M ju:"curr_process"
+M jv:"Process"
+M jw:"psutil.Process(pid=40820, name='python.exe', status='running', started='09:09:06')"
+TBV ju|jv|jw
+M jx:"log_info"
+M jy:"<function _RoboOutputImpl.process_snapshot.<locals>.log_info at 0x0000024FAAE3CDC0>"
+TBV jx|bI|jy
+M jz:"memory_info"
+M jA:"'Total: 7.8 G, Available: 1.2 G, Used: 84.8 %'"
+TBV jz|w|jA
+M jB:"child_i"
+TBV jB|q|ff
+M jC:"child"
+M jD:"psutil.Process(pid=41480, name='msedgedriver.exe', status='running', started='09:09:20')"
+TBV jC|jv|jD
+M jE:"'msedgedriver.exe'"
+TBV dE|w|jE
+M jF:"status"
+M jG:"'running'"
+TBV jF|w|jG
+M jH:"create_time"
+M jI:"'09:09:20'"
+TBV jH|w|jI
+M jJ:"ppid"
+M jK:"'40820'"
+TBV jJ|w|jK
+M jL:"cmdline"
+M jM:"'C:\\\\Users\\\\kamil\\\\.cache\\\\selenium\\\\msedgedriver\\\\win64\\\\127.0.2651.86\\\\msedgedriver.exe --port=62251 --log-path=logs/logs.txt'"
+TBV jL|w|jM
+M jN:"rss"
+M jO:"'14.8 M'"
+TBV jN|w|jO
+M jP:"vms"
+M jQ:"'8.3 M'"
+TBV jP|w|jQ
+M jR:"proc_memory_info"
+M jS:"pmem"
+M jT:"pmem(rss=15470592, vms=8720384, num_page_faults=6402, peak_wset=23998464, wset=15470592, peak_paged_pool=269232, paged_pool=220256, peak_nonpaged_pool=72792, nonpaged_pool=23208, pagefile=8720384, peak_pagefile=9117696, private=8720384)"
+TBV jR|jS|jT
+M jU:"'Subprocess: msedgedriver.exe (pid: 41480, status: running)\\nCommand Line: C:\\\\Users\\\\kamil\\\\.cache\\\\selenium\\\\msedgedriver\\\\win64\\\\127.0.2651.86\\\\msedgedriver.exe --port=62251 --log-path=logs/logs.txt\\nStarted: 09:09:20\\nParent pid: 40820\\nResident Set Size: 14.8 M\\nVirtual Memory Size: 8.3 M'"
+TBV bN|w|jU
+M jV:"_RoboOutputImpl"
+M jW:"<robocorp.log._robo_output_impl._RoboOutputImpl object at 0x0000024FAACB7FA0>"
+TBV iq|jV|jW
+M jX:"_dump_threads"
+M jY:"stack.append((f, f.f_lineno))"
+TBE jf|769|jX|jY
+TBV iq|jV|jW
+TBV je|t|u
+M jZ:"thread_id"
+M j0:"24020"
+TBV jZ|q|j0
+M j1:"frame"
+M j2:"<frame at 0x0000024FBC0FEA40, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\8f89ce1_b1f3c24_9ba66f27\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 773, code _dump_threads>"
+TBV j1|j1|j2
+M j3:"thread"
+M j4:"_MainThread"
+M j5:"<_MainThread(MainThread, started 24020)>"
+TBV j3|j4|j5
+M j6:"'MainThread|Thread ID: 24020 (non daemon)'"
+TBV fb|w|j6
+M j7:"f"
+M j8:"<frame at 0x0000024FA80BA140, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\8f89ce1_b1f3c24_9ba66f27\\\\lib\\\\site-packages\\\\robocorp\\\\tasks\\\\_commands.py', line 494, code run>"
+TBV j7|j1|j8
+M j9:"stack"
+M ka:"[(<frame at 0x0000024FBC188CF0, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\8f89ce1_b1f3c24_9ba66f27\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\__init__.py', line 270, code process_snapshot>, 270), (<frame at 0x0000024FAAC4C640, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\8f89ce1_b1f3c24_9ba66f27\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_logger.py', line 20, code new_func>, 20), (<frame at 0x0000024FBC1D9F20, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\8f89ce1_b1f3c24_9ba66f27\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_logger.py', line 416, code process_snapshot>, 416), (<frame at 0x0000024FABB0AD90, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\8f89ce1_b1f3c24_9ba66f27\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 748, code process_snapshot>, 748), (<frame at 0x0000024FBC0FEA40, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\8f89ce1_b1f3c24_9ba66f27\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 773, code _dump_threads>, 769)]"
+TBV j9|al|ka
+ETD 109.953
+EPS 109.953
+ET D|e|110.021
+ER D|110.021
